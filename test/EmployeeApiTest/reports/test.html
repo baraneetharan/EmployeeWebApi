@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">EmployeeApiReport</h1>
+          <h3 class="report-date">Tuesday, April 26 2016, 07:22pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">7.478<span>S</span></li>
+              <li class="qs-item summary-suites" title="Suites">4</li>
+              <li class="qs-item summary-tests" title="Tests">4</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">3</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">1</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">7.478<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">3</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct warning">75% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="674b0d76-1946-49f3-8115-47b35e45ffb4" class="suite has-tests has-passed">
+            <h3 class="suite-title">EmployeeCreateTest</h3>
+            <h5 class="suite-filename">/Users/sathyakrishna/Documents/baranee/Reka/VisualCore/VisualCore/test/EmployeeApiTest/spec/EmployeeTest.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="674b0d76-1946-49f3-8115-47b35e45ffb4" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2.399 s</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#674b0d76-1946-49f3-8115-47b35e45ffb4-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="674b0d76-1946-49f3-8115-47b35e45ffb4-test-list" class="list-group test-list collapse in">
+                    <div id="897bca5e-8c46-459f-bfa9-dda5e344e172" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Create empdetails
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#897bca5e-8c46-459f-bfa9-dda5e344e172 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">2.399 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">5000</span>);<br><span class="hljs-keyword">return</span> chakram.post(<span class="hljs-string">"http://Localhost:5000/api/EmployeeMasters/"</span>,<br>	{<br>                <span class="hljs-string">"EmpId"</span>:<span class="hljs-number">0</span>,<span class="hljs-string">"EmpName"</span>:<span class="hljs-string">"SueSmith"</span>,<span class="hljs-string">"Designation"</span>:<span class="hljs-string">"Dev"</span>,<span class="hljs-string">"Email"</span>:<span class="hljs-string">"soma@kgfsl.com"</span>,<span class="hljs-string">"Phone"</span>:<span class="hljs-string">"898989898"</span>,<span class="hljs-string">"Address"</span>:<span class="hljs-string">"CBE"</span>            },<br> {<br>	headers: {<br>		<span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span><br>	},<br>})<br>.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>)</span>{<br>	<span class="hljs-comment">//console.log(response.body);</span><br>	 expect(response).to.have.status(<span class="hljs-number">200</span>);<br>	 expect(response).to.have.header(<span class="hljs-string">'content-type'</span>, <span class="hljs-regexp">/json/</span>);<br>})<br><span class="hljs-keyword">return</span> chakram.wait();</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="1302b1f9-492d-4fc1-b0b0-261cd641aaf5" class="suite has-tests has-passed">
+            <h3 class="suite-title">EmployeeUpdateTest</h3>
+            <h5 class="suite-filename">/Users/sathyakrishna/Documents/baranee/Reka/VisualCore/VisualCore/test/EmployeeApiTest/spec/EmployeeTest.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="1302b1f9-492d-4fc1-b0b0-261cd641aaf5" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">47 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#1302b1f9-492d-4fc1-b0b0-261cd641aaf5-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="1302b1f9-492d-4fc1-b0b0-261cd641aaf5-test-list" class="list-group test-list collapse in">
+                    <div id="6ed12a47-b781-462f-908e-61d4830d3100" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Updating employee details
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6ed12a47-b781-462f-908e-61d4830d3100 > .test-code.collapse">Code</button>
+              <span class="test-duration medium">47 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">5000</span>);<br><span class="hljs-keyword">return</span> chakram.post(<span class="hljs-string">"http://Localhost:5000/api/EmployeeMasters/"</span>,<br>	{<br>                <span class="hljs-string">"EmpID"</span>:<span class="hljs-string">"3"</span>,<span class="hljs-string">"EmpName"</span>:<span class="hljs-string">"Somasundaram"</span>,<span class="hljs-string">"Designation"</span>:<span class="hljs-string">"Dev"</span>,<span class="hljs-string">"Email"</span>:<span class="hljs-string">"soma@kgfsl.com"</span>,<span class="hljs-string">"Phone"</span>:<span class="hljs-string">"898989898"</span>,<span class="hljs-string">"Address"</span>:<span class="hljs-string">"CBE"</span>            },<br> {<br>	headers: {<br>		<span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span><br>	},<br>	<br>	<br>})<br>.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>)</span>{<br>	<span class="hljs-comment">//console.log(response.body);</span><br>	 expect(response).to.have.status(<span class="hljs-number">200</span>);<br>	 expect(response).to.have.header(<span class="hljs-string">'content-type'</span>, <span class="hljs-regexp">/json/</span>);<br>})<br><span class="hljs-keyword">return</span> chakram.wait();</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="4ddee735-1096-4640-a8de-bbbd07a803a7" class="suite has-tests has-passed">
+            <h3 class="suite-title">EmployeeDeleteTest</h3>
+            <h5 class="suite-filename">/Users/sathyakrishna/Documents/baranee/Reka/VisualCore/VisualCore/test/EmployeeApiTest/spec/EmployeeTest.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="4ddee735-1096-4640-a8de-bbbd07a803a7" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">19 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#4ddee735-1096-4640-a8de-bbbd07a803a7-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="4ddee735-1096-4640-a8de-bbbd07a803a7-test-list" class="list-group test-list collapse in">
+                    <div id="79452690-21de-467c-818b-a1de3b8c3ede" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              delete employee details
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#79452690-21de-467c-818b-a1de3b8c3ede > .test-code.collapse">Code</button>
+              <span class="test-duration fast">19 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">5000</span>);<br><span class="hljs-comment">// return chakram.delete("http://Localhost:5000/api/EmployeeMasters?EmpID=7",</span><br>	<br><span class="hljs-comment">//  {</span><br><span class="hljs-comment">// 	headers: {</span><br><span class="hljs-comment">// 		'Content-Type': 'application/json'</span><br><span class="hljs-comment">// 	},</span><br><span class="hljs-comment">// })</span><br><span class="hljs-keyword">return</span> chakram.post(<span class="hljs-string">"http://Localhost:5000/api/EmployeeMasters/DeleteEmployeeMaster"</span>,<br>	{<br>                <span class="hljs-string">"EmpID"</span>:<span class="hljs-string">"3"</span>,<span class="hljs-string">"EmpName"</span>:<span class="hljs-string">"Somasundaram"</span>,<span class="hljs-string">"Designation"</span>:<span class="hljs-string">"Dev"</span>,<span class="hljs-string">"Email"</span>:<span class="hljs-string">"soma@kgfsl.com"</span>,<span class="hljs-string">"Phone"</span>:<span class="hljs-string">"898989898"</span>,<span class="hljs-string">"Address"</span>:<span class="hljs-string">"CBE"</span>            },<br> {<br>	headers: {<br>		<span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span><br>	},<br>	<br>	<br>})<br>.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>)</span>{<br>	<span class="hljs-comment">//console.log(response.body);</span><br>	        expect(response).to.have.status(<span class="hljs-number">200</span>);<br>	expect(response).to.have.header(<span class="hljs-string">'content-type'</span>, <span class="hljs-regexp">/json/</span>);<br>})<br><span class="hljs-keyword">return</span> chakram.wait();</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="7ac7b6cd-34a3-4e92-a043-9f944fef985a" class="suite has-tests has-failed">
+            <h3 class="suite-title">EmployeeGetALLTest</h3>
+            <h5 class="suite-filename">/Users/sathyakrishna/Documents/baranee/Reka/VisualCore/VisualCore/test/EmployeeApiTest/spec/EmployeeTest.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="7ac7b6cd-34a3-4e92-a043-9f944fef985a" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="1" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">5.3 s</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">1</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#7ac7b6cd-34a3-4e92-a043-9f944fef985a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="7ac7b6cd-34a3-4e92-a043-9f944fef985a-test-list" class="list-group test-list collapse in">
+                    <div id="11eb3e69-5cf2-414e-bd37-1019e50b4d35" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              get all employees
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#11eb3e69-5cf2-414e-bd37-1019e50b4d35 > .test-code.collapse">Code</button>
+              <span class="test-duration ">5.3 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">Error: timeout of 5000ms exceeded. Ensure the done() callback is being called in this test.
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#11eb3e69-5cf2-414e-bd37-1019e50b4d35 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">this</span>.timeout(<span class="hljs-number">5000</span>);<br><span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://Localhost:5000/api/EmployeeMasters"</span>)<br>.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">response</span>)</span>{<br>	<span class="hljs-built_in">console</span>.log(response.body);<br>	        expect(response).to.have.status(<span class="hljs-number">200</span>);<br>	expect(response).to.have.header(<span class="hljs-string">'content-type'</span>, <span class="hljs-regexp">/json/</span>);<br>})<br><span class="hljs-keyword">return</span> chakram.wait();</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small"><span class="hljs-built_in">Error</span>: timeout <span class="hljs-keyword">of</span> <span class="hljs-number">5000</span>ms exceeded. Ensure the done() callback is being called <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span> test.</code></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
