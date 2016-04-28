@@ -1,0 +1,4 @@
+/src/EmployeeWebApi/node_modules/
+artifacts/bin
+.vs
+.vscode
